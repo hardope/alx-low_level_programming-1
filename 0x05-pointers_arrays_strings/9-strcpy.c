@@ -1,11 +1,20 @@
 #include<stdio.h>
-
+#include "2-strlen.c"
 /**
-* _puts - Prints to stdout
-* @str: string
-* Return: Length of string
-*/
-void _puts(char *str)
+ * _strcpy - main function to copy
+ *
+ * @dest: destination to copy
+ * @src: src
+ *
+ * Return: a character value
+ */
+char *_strcpy(char *dest, char *src)
 {
-	printf("%s\n", str);
+	int i;
+
+	for (i = 0; i <= _strlen(src); i++)
+	{
+		dest[i] = src[i];
+	}
+	return (dest);
 }
