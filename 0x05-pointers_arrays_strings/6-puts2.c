@@ -1,17 +1,20 @@
 #include<stdio.h>
 #include "2-strlen.c"
 /**
- * print_rev - reverse a string
+ * puts2 - puts string twice
  *
- * @s: string to print
+ * @str: string to put twice
  */
-void print_rev(char *s)
+void puts2(char *str)
 {
 	int i;
 
-	for (i = _strlen(s) - 1; i >= 0; i--)
+	for (i = 0; i < _strlen(str); i++)
 	{
-		printf("%c", *(s + i));
+		if (i % 2 == 0)
+		{
+			printf("%c", str[i]);
+		}
 	}
 	printf("\n");
 }
