@@ -1,20 +1,11 @@
 #include<stdio.h>
-#include<string.h>
 
 /**
-* _strlen - Length
-* @s: string
+* _puts - Prints to stdout
+* @str: string
 * Return: Length of string
 */
-int _strlen(char *s)
+void _puts(char *str)
 {
-	int len;
-
-	len = 0;
-	while (*s)
-	{
-		s++;
-		len++;
-	}
-	return (len);
+	printf("%s", str);
 }
