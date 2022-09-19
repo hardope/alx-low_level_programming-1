@@ -1,11 +1,12 @@
 #include<stdio.h>
+#include<string.h>
 
 /**
-* _puts - Prints to stdout
-* @str: string
+*print_rev - Prints to stdout in reverse
+* @s: string
 * Return: Length of string
 */
-void _puts(char *str)
+void print_rev(char *s)
 {
-	printf("%s\n", str);
+	printf("%s\n", strrev(s));
 }
