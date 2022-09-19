@@ -1,9 +1,14 @@
 #include<stdio.h>
 
 /**
-* reset_to_98 - Reset to 98
+* swap_int - Swap integers
+* @a: Value of a
+* @b: Value of b
 */
-void reset_to_98(int *n)
+void swap_int(int *a, int *b)
 {
-	&n = 98;
+	int c;
+	c = *a;
+	*a = *b;
+	*b = c;
 }
