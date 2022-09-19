@@ -1,17 +1,19 @@
 #include<stdio.h>
 #include "2-strlen.c"
 /**
- * print_rev - reverse a string
+ * rev_string - reverse a string value
  *
  * @s: string to print
  */
-void print_rev(char *s)
+void rev_string(char *s)
 {
 	int i;
+	char temp;
 
-	for (i = _strlen(s) - 1; i >= 0; i--)
+	for (i = 0; i < _strlen(s) / 2; i++)
 	{
-		printf("%c", *(s + i));
+		temp = s[i];
+		s[i] = s[_strlen(s) - i - 1];
+		s[_strlen(s) - i - 1] = temp;
 	}
-	printf("\n");
 }
