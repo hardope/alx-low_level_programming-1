@@ -2,7 +2,7 @@
 #include<string.h>
 
 /**
-* reset_to_98 - Reset to 98
+* _strlen - Length
 * @s: string
 * Return: Length of string
 */
