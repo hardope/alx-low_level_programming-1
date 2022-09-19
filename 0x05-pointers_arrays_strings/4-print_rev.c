@@ -8,5 +8,6 @@
 */
 void print_rev(char *s)
 {
-	printf("%s\n", strrev(*s));
+	strrev(*s);
+	printf("%s\n", s);
 }
