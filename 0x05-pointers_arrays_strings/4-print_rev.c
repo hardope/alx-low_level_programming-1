@@ -1,26 +1,17 @@
 #include<stdio.h>
-#include<string.h>
-#include<stdlib.h>
-
+#include "2-strlen.c"
 /**
-*print_rev - Prints to stdout in reverse
-* @s: string
-* Return: Length of string
-*/
+ * print_rev - reverse a string
+ *
+ * @s: string to print
+ */
 void print_rev(char *s)
 {
-	int len = -1;
+	int i;
 
-	while (*s)
+	for (i = _strlen(s) - 1; i >= 0; i--)
 	{
-		s++;
-		len++;
+		_putchar(*(s + i));
 	}
-
-	while (len > 0)
-	{
-		printf("%c", s[len]);
-		len--;
-	}
-	printf("\n");
+	_putchar('\n');
 }
