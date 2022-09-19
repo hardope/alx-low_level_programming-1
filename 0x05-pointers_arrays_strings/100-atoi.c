@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include "main.h"
 #include "2-strlen.c"
 
 /**
@@ -9,38 +9,21 @@
  */
 int _atoi(char *s)
 {
-	int i;
-	int np = 0;
-	int c;
-	int d = 1;
-	int num = 0;
+int i, j, n, x;
 
-	for (i = 0; i < _strlen(s); i++)
+	i = n = 0;
+	x = 1;
+	while ((s[i] < '0' || s[i] > '9') && (s[i] != '\0'))
 	{
-		if (!(s[i] >= '0' && s[i] <= '9') && c > 0)
-			break;
 		if (s[i] == '-')
-			np--;
-		if (s[i] == '+')
-			np++;
-		if (s[i] >= '0' && s[i] <= '9')
-		{
-			c++;
-		}
+			x *= -1;
+		i++;
 	}
-	while (c > 0)
+	j = i;
+	while ((s[j] >= '0') && (s[j] <= '9'))
 	{
-		num += ((s[i - 1] - '0') * d);
-		i--;
-		c--;
-		d *= 10;
+		n = (n * 10) + x * ((s[j]) - '0');
+		j++;
 	}
-	if (np >= 0)
-	{
-		num *= 1;
-	} else
-	{
-		num *= -1;
-	}
-	return (num);
+	return (n);
 }
