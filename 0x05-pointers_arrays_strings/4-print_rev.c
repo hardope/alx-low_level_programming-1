@@ -7,8 +7,29 @@
 * @s: string
 * Return: Length of string
 */
+int _strlen(char *s)
+{
+	int len;
+
+	len = 0;
+	while (*s)
+	{
+		s++;
+		len++;
+	}
+	return (len);
+}
 void print_rev(char *s)
 {
-	strrev(*s);
-	printf("%s\n", s);
+	int len, i, temp;
+
+	len = _strlen(*s);
+	
+	for (i = 0; i < len/2; i++)
+	{
+		temp = *s[i];
+		*s[i] = *s[len - i - 1];
+		*s[len - i - 1] = temp;
+	}
+	printf("%s\n", *s)
 }
