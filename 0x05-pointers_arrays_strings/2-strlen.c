@@ -9,7 +9,9 @@
 int _strlen(char *s)
 {
 	int len;
+	char word[1000];
 
-	len = strlen(*s);
+	word = *s;
+	len = strlen(word);
 	return (len);
 }
