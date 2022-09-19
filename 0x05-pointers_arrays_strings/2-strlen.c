@@ -2,9 +2,13 @@
 
 /**
 * reset_to_98 - Reset to 98
-* @n: Value
+* @s: string
+* Return: Length of string
 */
-void reset_to_98(int *n)
+int _strlen(char *s);
 {
-	*n = 98;
+	int len;
+
+	len = strlen(*s);
+	return (len);
 }
