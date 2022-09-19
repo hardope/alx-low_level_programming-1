@@ -1,11 +1,19 @@
 #include<stdio.h>
-
 /**
-* _puts - Prints to stdout
-* @str: string
-* Return: Length of string
-*/
-void _puts(char *str)
+ * print_array - prints array
+ * @a: pointer of array
+ * @n: how many times to prints
+ *
+ */
+void print_array(int *a, int n)
 {
-	printf("%s\n", str);
+	int i;
+
+	for (i = 0; i < n; i++)
+	{
+		printf("%d", a[i]);
+		if (i != n - 1)
+			printf(", ");
+	}
+	printf("\n");
 }
