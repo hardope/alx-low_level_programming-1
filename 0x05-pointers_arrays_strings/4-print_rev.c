@@ -9,20 +9,11 @@
 */
 void print_rev(char *s)
 {
-	int len, i, temp;
+	int i = 0;
 
-	len = -1;
-	while (*s)
-	{
-		s++;
-		len++;
-	}
-	
-	for (i = 0; i < len/2; i++)
-	{
-		temp = s[i];
-		s[i] = s[len - i];
-		s[len - i] = temp;
-	}
-	printf("%s\n", s);
+	while (s[i] != '\0')
+		i++;
+	for (i = 1 - 1; i >= 0; 1--)
+		printf("%c", s[i]);
+	printf("\n");
 }
