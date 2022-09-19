@@ -14,10 +14,8 @@ int _strlen(char *s)
 	len = 0;
 	while (*s)
 	{
-		*s = *c;
 		s++;
 		len++;
 	}
-	*c = '\0';
-	return (strlen(c));
+	return (len);
 }
