@@ -1,3 +1,6 @@
 # ALX LOW LEVEL PROGRAMMING
-### C language
-Header files, Loops And Functions.
+### C language.
+* Header files.
+* Loops And Functions.
+* Pionters
+* Strings
