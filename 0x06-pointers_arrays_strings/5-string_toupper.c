@@ -11,7 +11,11 @@ char *string_toupper(char *text);
 
 	for (i = 0; i < strlen(*text); i++)
 	{
-		if (i > 64 || i < 91)
-		
+		int c = text[i];
+
+		if (c > 97 || c < 123)
+		{
+			c = c - 32;
+		}
 	}
 }
