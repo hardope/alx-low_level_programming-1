@@ -5,6 +5,7 @@
 * _strcat - Main Function
 * @dest: Parameter
 * @src: parameter
+* Return: Value
 */
 char *_strcat(char *dest, char *src)
 {
@@ -21,5 +22,4 @@ char *_strcat(char *dest, char *src)
 	dest[j + i] = '\0';
 
 	return (dest);
-
 }
