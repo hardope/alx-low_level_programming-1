@@ -5,14 +5,15 @@
 * _strcat - Main Function
 * @text: Parameter
 */
-char *string_toupper(char *text);
+char *string_toupper(char *text)
 {
 	int i;
 
-	for (i = 0; s[i] != '\0' - 1; i++)
+	for (i = 0; i < strlen(*text) - 1; i++)
 	{
+		int c = text[i];
 
-		if (s[i] > 97 || s[i] < 123)
+		if (c > 97 || c < 123)
 		{
 			c = c - 32;
 		}
