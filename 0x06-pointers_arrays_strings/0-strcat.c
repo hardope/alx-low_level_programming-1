@@ -1,9 +1,13 @@
 #include<stdio.h>
+#include "main.h"
+#include <string.h>
 /**
-* main - Main Function
-* @p: Parameter
+* _strcat - Main Function
+* @dest: Parameter
+* @src: parameter
 */
-int main(void)
+char *_strcat(char *dest, char *src)
 {
-	printf();
+	srtcat(*dest, *src);
+	return (*dest);
 }
