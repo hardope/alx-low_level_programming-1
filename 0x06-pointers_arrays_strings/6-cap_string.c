@@ -18,4 +18,5 @@ char *cap_string(char *text);
 			c = c - 32;
 		}
 	}
+	return (text);
 }
