@@ -1,21 +1,16 @@
-#include<stdio.h>
 #include "main.h"
-#include <string.h>
 /**
-* _strcat - Main Function
-* @text: Parameter
-*/
-char *string_toupper(char *text)
+ * string_toupper - uppers a lower
+ * @s: character to make upper
+ * Return: return value of upper
+ */
+char *string_toupper(char *s)
 {
 	int i;
 
-	for (i = 0; i < strlen(*text) - 1; i++)
-	{
-		int c = text[i];
+	for (i = 0; s[i] != '\0'; i++)
+		if (s[i] >= 97 && s[i] <= 122)
+			s[i] = s[i] - 32;
 
-		if (c > 97 || c < 123)
-		{
-			c = c - 32;
-		}
-	}
+	return (s);
 }
