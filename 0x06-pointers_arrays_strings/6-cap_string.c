@@ -9,14 +9,9 @@ char *cap_string(char *text);
 {
 	int i;
 
-	for (i = 0; i < strlen(*text); i++)
-	{
-		int c = text[i];
+	for (i = 0; text[i] != '\0'; i++)
+		if (text[i] >= 97 && text[i] <= 122)
+			text[i] = text[i] - 32;
 
-		if (c > 97 || c < 123)
-		{
-			c = c - 32;
-		}
-	}
-	return (text);
+	return (s);
 }
