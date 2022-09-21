@@ -1,13 +1,25 @@
-#include<stdio.h>
-#include "main.h"
-#include <string.h>
 /**
-* _strcat - Main Function
-* @dest: Parameter
-* @src: parameter
-*/
-char *_strcat(char *dest, char *src)
+ * leet - leet
+ * @s: string
+ *
+ * Return: char value
+ */
+char *leet(char *s)
 {
-	srtcat(*dest, *src);
-	return (*dest);
+	char alphaArr[] = "a4A4e3E3o0O0t7T7l1L1";
+	int i;
+	int j;
+
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		for (j = 0; alphaArr[j] != '\0'; j++)
+		{
+			if (s[i] == alphaArr[j])
+			{
+				s[i] = alphaArr[j + 1];
+				break;
+			}
+		}
+	}
+	return (s);
 }
