@@ -2,12 +2,20 @@
 #include "main.h"
 #include <string.h>
 /**
-* _strcat - Main Function
-* @dest: Parameter
-* @src: parameter
+* cap_string - Main Function
+* @text: Parameter
 */
-char *_strcat(char *dest, char *src)
+char *cap_string(char *text);
 {
-	srtcat(*dest, *src);
-	return (*dest);
+	int i;
+
+	for (i = 0; i < strlen(*text); i++)
+	{
+		int c = text[i];
+
+		if (c > 97 || c < 123)
+		{
+			c = c - 32;
+		}
+	}
 }
