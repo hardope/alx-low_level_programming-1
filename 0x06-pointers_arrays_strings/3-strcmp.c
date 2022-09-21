@@ -2,12 +2,11 @@
 #include "main.h"
 #include <string.h>
 /**
-* _strcat - Main Function
-* @dest: Parameter
-* @src: parameter
+* _strcmp - Main Function
+* @s1: Parameter
+* @s2: parameter
 */
-char *_strcat(char *dest, char *src)
+int _strcmp(char *s1, char *s2);
 {
-	srtcat(*dest, *src);
-	return (*dest);
+	return (strcmp(*s1, *s2);)
 }
