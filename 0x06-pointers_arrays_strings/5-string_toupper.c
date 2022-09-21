@@ -3,11 +3,15 @@
 #include <string.h>
 /**
 * _strcat - Main Function
-* @dest: Parameter
-* @src: parameter
+* @text: Parameter
 */
-char *_strcat(char *dest, char *src)
+char *string_toupper(char *text);
 {
-	srtcat(*dest, *src);
-	return (*dest);
+	int i;
+
+	for (i = 0; i < strlen(*text); i++)
+	{
+		if (i > 64 || i < 91)
+		
+	}
 }
