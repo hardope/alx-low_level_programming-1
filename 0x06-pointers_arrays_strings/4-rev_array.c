@@ -1,13 +1,20 @@
-#include<stdio.h>
 #include "main.h"
-#include <string.h>
+
 /**
-* _strcat - Main Function
-* @dest: Parameter
-* @src: parameter
-*/
-char *_strcat(char *dest, char *src)
+ * reverse_array - reverses an array
+ *
+ * @a: array to reverse
+ * @n: size of array
+ */
+void reverse_array(int *a, int n)
 {
-	srtcat(*dest, *src);
-	return (*dest);
+	int i;
+	int t;
+
+	for (i = 0; i < n / 2; i++)
+	{
+		t = a[i];
+		a[i] = a[n - i - 1];
+		a[n - i - 1] = t;
+	}
 }
