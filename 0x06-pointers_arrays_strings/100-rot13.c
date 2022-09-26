@@ -1,13 +1,28 @@
-#include<stdio.h>
 #include "main.h"
-#include <string.h>
 /**
-* _strcat - Main Function
-* @dest: Parameter
-* @src: parameter
-*/
-char *_strcat(char *dest, char *src)
+ * rot13 - encrypts code
+ * @s: string to encrypt
+ * Return: char value
+ */
+char *rot13(char *s)
 {
-	srtcat(*dest, *src);
-	return (*dest);
+	char part1[52] = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ";
+	char part2[52] = "nNoOpPqQrRsStTuUvVwWxXyYzZaAbBcCdDeEfFgGhHiIjJkKlLmM";
+
+	int i;
+	int j = 0;
+
+	for (i = 0; s[i] != '\0'; i++)
+	{
+
+		for (j = 0; part1[j] != '\0'; j++)
+		{
+			if (s[i] == part1[j])
+			{
+				s[i] = part2[j];
+				break;
+			}
+		}
+	}
+	return (s);
 }

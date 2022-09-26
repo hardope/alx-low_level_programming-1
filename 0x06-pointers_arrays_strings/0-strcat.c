@@ -5,9 +5,21 @@
 * _strcat - Main Function
 * @dest: Parameter
 * @src: parameter
+* Return: Value
 */
 char *_strcat(char *dest, char *src)
 {
-	srtcat(*dest, *src);
-	return (*dest);
+	int i;
+	int j;
+
+	for (j = 0; dest[j] != '\0'; j++)
+	{}
+
+	for (i = 0; src[i] != '\0'; i++)
+	{
+		dest[j + i] = src[i];
+	}
+	dest[j + i] = '\0';
+
+	return (dest);
 }
