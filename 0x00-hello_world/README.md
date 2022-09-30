@@ -1,1 +1,1 @@
-C Programme
+#!/bin/bash

@@ -1,12 +1,12 @@
-#include<stdio.h>
 #include "main.h"
-#include <string.h>
 /**
-* _strcat - Main Function
-* @dest: Parameter
-* @src: parameter
-* Return: Value
-*/
+ * _strcat - concats two arrays
+ *
+ * @dest: destination of concat
+ * @src: source array to concat
+ *
+ * Return: char value
+ */
 char *_strcat(char *dest, char *src)
 {
 	int i;
@@ -22,4 +22,5 @@ char *_strcat(char *dest, char *src)
 	dest[j + i] = '\0';
 
 	return (dest);
+
 }

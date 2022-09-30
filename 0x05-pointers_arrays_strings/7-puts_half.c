@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include "main.h"
 #include "2-strlen.c"
 
 /**
@@ -9,15 +9,15 @@
 void puts_half(char *str)
 {
 	int i;
-	int check = 0;
+	int oE = 0;
 
 	if (_strlen(str) % 2 != 0)
 	{
-		check += 1;
+		oE += 1;
 	}
-	for (i = (_strlen(str) + check) / 2; i < _strlen(str); i++)
+	for (i = (_strlen(str) + oE) / 2; i < _strlen(str); i++)
 	{
-		printf("%c", str[i]);
+		_putchar(str[i]);
 	}
-	printf("\n");
+	_putchar('\n');
 }

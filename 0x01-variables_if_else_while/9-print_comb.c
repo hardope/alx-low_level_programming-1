@@ -1,26 +1,22 @@
-#include<stdio.h>
-#include<stdlib.h>
-/* more headers goes there */
-/* Initial short description */
-/* betty style doc for function main goes there */
+#include <stdio.h>
 /**
-* main - This is a description
-* Return: 0 if successful. 1 otherwise
-*/
+ * main - entry point
+ *
+ * Return: alway returns 0
+ *
+ */
 int main(void)
 {
-	int a = 48;
-	int b = 44;
+	int i;
 
-	while (a < 58)
+	for (i = 10; i < 20; i++)
 	{
-		putchar(a);
-		if (a != 57)
+		putchar((i % 10) + '0');
+		if (i != 19)
 		{
-			putchar(b);
-			putchar(32);
+			putchar(',');
+			putchar(' ');
 		}
-		a++;
 	}
 	putchar('\n');
 	return (0);

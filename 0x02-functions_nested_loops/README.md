@@ -1,2 +1,1 @@
-# Alphabets
-For printing alphabets
+just a readme

@@ -1,29 +1,30 @@
 #include <stdio.h>
-#include <unistd.h>
 /**
- * main - Entyr point
- * Description: prints two digits combination
- * Return: Always 0 (success)
+ * main - entry point
+ *
+ * Return: alway returns 0
+ *
  */
 int main(void)
 {
-	int c, i;
+	int i;
+	int j;
 
-	for (c = '0'; c <= '9'; c++)
+	for (i = 10; i <= 19; i++)
 	{
-		for (i = '0'; i <= '9'; i++)
+		for (j = 10; j <= 19; j++)
 		{
-			if (c < i)
+			if ((j % 10) > (i % 10))
 			{
-				putchar(c);
-				putchar(i);
-
-				if (c != '8' || (c == '8' && i != '9'))
+				putchar((i % 10) + '0');
+				putchar((j % 10) + '0');
+				if (i != 18 || j != 19)
 				{
 					putchar(',');
 					putchar(' ');
 				}
 			}
+
 		}
 	}
 	putchar('\n');

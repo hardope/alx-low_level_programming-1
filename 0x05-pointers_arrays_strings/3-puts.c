@@ -1,11 +1,17 @@
-#include<stdio.h>
-
+#include "main.h"
+#include "2-strlen.c"
 /**
-* _puts - Prints to stdout
-* @str: string
-* Return: Length of string
-*/
+ * _puts - puts a string
+ *
+ * @str: string to print
+ */
 void _puts(char *str)
 {
-	printf("%s\n", str);
+	int i;
+
+	for (i = 0; *(str + i) != '\0'; i++)
+	{
+		_putchar(*(str + i));
+	}
+	_putchar('\n');
 }

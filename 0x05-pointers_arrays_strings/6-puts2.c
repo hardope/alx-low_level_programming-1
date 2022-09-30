@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include "main.h"
 #include "2-strlen.c"
 /**
  * puts2 - puts string twice
@@ -13,8 +13,8 @@ void puts2(char *str)
 	{
 		if (i % 2 == 0)
 		{
-			printf("%c", str[i]);
+			_putchar(str[i]);
 		}
 	}
-	printf("\n");
+	_putchar('\n');
 }

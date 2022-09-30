@@ -1,29 +1,28 @@
 #include "main.h"
 /**
- * prime_check - checks to see if number is prime
- * @f: factor check
- * @p: possible prime number
- *
- * Return: 1 if prime, 0 if not
+ * helper - does it for me
+ * @i: helper int
+ * @n: integer I'm testing
+ * Return: value
  */
-int prime_check(int f, int p)
+int helper(int i, int n)
 {
-	if (p < 2 || p % f == 0)
+	if (n % i == 0 && n != i)
 		return (0);
-	else if (f > p / 2)
-		return (1);
-	else
-		return (prime_check(f + 1, p));
+	if (n % i != 0 && i < n)
+		return (helper(i + 1, n));
+	return (1);
 }
 /**
- * is_prime_number - states if number is prime
- * @n: number to check
- *
- * Return: 1 if prime, 0 if not
+ * is_prime_number - is prime or not
+ * @n: integer to compare
+ * Return: boolean
  */
 int is_prime_number(int n)
 {
-	if (n == 2)
-		return (1);
-	return (prime_check(2, n));
+	int i = 2;
+
+	if (n < 2)
+		return (0);
+	return (helper(i, n));
 }
