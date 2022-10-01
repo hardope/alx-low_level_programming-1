@@ -1,23 +1,38 @@
 #include "main.h"
 /**
- * jack_bauer - main thing
- *
- */
+*  jack_bauer - Print
+*/
 void jack_bauer(void)
 {
-int i;
-int j;
+	int i;
+	int j;
+	int k;
+	int l;
 
-for (i = 0; i <= 23; i++)
-{
-for (j = 0; j <= 59; j++)
-{
-_putchar(i / 10 + '0');
-_putchar(i % 10 + '0');
-_putchar(':');
-_putchar(j / 10 + '0');
-_putchar(j % 10 + '0');
-_putchar('\n');
-}
-}
+	int count = 0;
+
+	for (i = 48; i < 58; i++)
+	{
+		for (j = 48; j < 58; j++)
+		{
+			if (count > 1390)
+			{
+				break;
+			}
+			for (k = 48; k < 54; k++)
+			{
+				for (l = 48; l < 58; l++)
+				{
+					count++;
+					_putchar(i);
+					_putchar(j);
+					_putchar(':');
+					_putchar(k);
+					_putchar(l);
+					_putchar('\n');
+
+				}
+			}
+		}
+	}
 }

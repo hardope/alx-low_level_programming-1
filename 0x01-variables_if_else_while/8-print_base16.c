@@ -1,25 +1,26 @@
-#include <stdio.h>
+#include<stdio.h>
+#include<stdlib.h>
+/* more headers goes there */
+/* Initial short description */
+/* betty style doc for function main goes there */
 /**
- * main - entry point
- *
- * Return: alway returns 0
- *
- */
+* main - This is a description
+* Return: 0 if successful. 1 otherwise
+*/
 int main(void)
 {
-	unsigned char a = '0';
-	int i;
+	int a = 48;
+	int b = 97;
 
-	for (i = 0; i < 10; i++)
+	while (a < 58)
 	{
 		putchar(a);
 		a++;
 	}
-	a = '1';
-	for (i = 0; i < 6; i++)
+	while (b < 103)
 	{
-		putchar('0' + a);
-		a++;
+		putchar(b);
+		b++;
 	}
 	putchar('\n');
 	return (0);

@@ -1,23 +1,23 @@
 #include "main.h"
 /**
- * print_alphabet_x10 - its a function in the main header print
- *
- * Return: Always returns 0
+ * print_alphabet_x10 - Prints aplhabets in lowercase
  */
-
 void print_alphabet_x10(void)
 {
-int a;
-int i;
-for (i = 1; i <= 10;)
-{
-for (a = 'a'; a <= 'z'; a++)
-{
-_putchar(a);
-}
-i++;
+	int a;
+	int count;
 
-_putchar('\n');
-}
+	count = 0;
+	while (count < 10)
+	{
+		a = 97;
 
+		while (a < 123)
+		{
+			_putchar(a);
+			a++;
+		}
+		_putchar('\n');
+		count++;
+	}
 }

@@ -1,29 +1,41 @@
 #include <stdio.h>
+#include <unistd.h>
 /**
- * main - entry point
- *
- * Return: alway returns 0
- *
+ * main - Entry point
+ * Description: prints all possible combination of 2-digit numbers
+ * Return: Always 0 (success)
  */
 int main(void)
 {
-	int i;
-	int j;
+	int a, b, c, d;
 
-	for (i = 0; i <= 99; i++)
+	for (a = 48; a <= 57; a++)
 	{
-		for (j = i + 1; j <= 99; j++)
+		for (b = 48; b <= 57; b++)
 		{
-			putchar(i / 10 + '0');
-			putchar(i % 10 + '0');
-			putchar(' ');
-			putchar(j / 10 + '0');
-			putchar(j % 10 + '0');
-
-			if (!(i == 98 && j == 99))
+			for (c = 48; c <= 57; c++)
 			{
-				putchar(',');
-				putchar(' ');
+				for (d = 48; d <= 57; d++)
+				{
+				if (((c + d) > (a + b) &&  c >= a) || a < c)
+				{
+					putchar(a);
+					putchar(b);
+					putchar(' ');
+					putchar(c);
+					putchar(d);
+
+					if (a + b + c + d == 227 && a == 57)
+					{
+					break;
+					}
+					else
+					{
+					putchar(',');
+					putchar(' ');
+					}
+				}
+				}
 			}
 		}
 	}

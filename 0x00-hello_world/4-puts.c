@@ -1,11 +1,11 @@
 #include<stdio.h>
-
+/* standard input output */
 /**
- * main - like a room where programs work
- * Return: always 0 (that is return nothing)
- */
+* main - This is a description
+* Return: 0 if successfull. 1 otherwise
+*/
 int main(void)
 {
-puts("\"Programming is like building a multilingual puzzle");
-return (0);
+	puts("\"Programming is like building a multilingual puzzle");
+	return (0);
 }

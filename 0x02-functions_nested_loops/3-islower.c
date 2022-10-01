@@ -1,15 +1,13 @@
 #include "main.h"
 /**
- * _islower - its a function in the main header that allows us to print
- * @c: an integer argument
- * Return: Always returns 0
- */
-
+*  _islower - Print
+* Return: 0 Success
+* @c: Description for c
+*/
 int _islower(int c)
 {
-if (c >= 'a' && c <= 'z')
-{
-return (1);
-}
-return (0);
+	if (c > 97 && c < 123)
+		return (1);
+	else
+		return (0);
 }

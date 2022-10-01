@@ -1,13 +1,11 @@
 #include "main.h"
 /**
- * print_square - prints square stuff
- *
- * @size: integer to set square size
- */
+*  print_square - Print
+* @size: Value
+*/
 void print_square(int size)
 {
-	int i;
-	int j;
+	int i, j;
 
 	if (size <= 0)
 	{

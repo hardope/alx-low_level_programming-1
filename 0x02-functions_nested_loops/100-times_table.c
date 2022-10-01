@@ -5,7 +5,6 @@
 * @n: Values
 * Return: Values
 */
-
 void print_times_table(int n)
 {
 int a, b, op;
@@ -32,16 +31,13 @@ _putchar((op / 10) + 48);
 _putchar((op % 10) + 48);
 }
 else
-
 {
-
 _putchar(((op / 100) % 10) + 48);
 _putchar(((op / 10) % 10) + 48);
 _putchar((op % 10) + 48);
 }
 }
 _putchar('\n');
-
 }
 }
 }

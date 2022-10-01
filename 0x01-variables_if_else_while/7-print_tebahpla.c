@@ -1,16 +1,24 @@
-#include <stdio.h>
+#include<stdio.h>
+#include<stdlib.h>
+/* more headers goes there */
+/* Initial short description */
+/* betty style doc for function main goes there */
 /**
- * main - entry point
- *
- * Return: alway returns 0
- *
- */
+* main - This is a description
+* Return: 0 if successful. 1 otherwise
+*/
 int main(void)
 {
-	char a;
+	char b;
 
-	for (a = 'z'; a >= 'a' ; a--)
-		putchar(a);
+	int a = 122;
+
+	while (a > 96)
+	{
+		b = (char)(a);
+		putchar(b);
+		a--;
+	}
 	putchar('\n');
 	return (0);
 }

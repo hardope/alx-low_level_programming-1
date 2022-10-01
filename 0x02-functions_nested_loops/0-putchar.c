@@ -1,20 +1,10 @@
-#include "main.h"
+#include<stdio.h>
 /**
- * main - Entry point
- *
- * Return: Always returns 0
- */
-
+* main - Print
+* Return: 0. Successful.
+*/
 int main(void)
 {
-_putchar('_');
-_putchar('p');
-_putchar('u');
-_putchar('t');
-_putchar('c');
-_putchar('h');
-_putchar('a');
-_putchar('r');
-_putchar('\n');
-return (0);
+	printf("_putchar\n");
+	return (0);
 }
