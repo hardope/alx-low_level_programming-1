@@ -1,6 +1,6 @@
 # alx-low_level_programming
 
-# Introduction to programming with c
+## Introduction to programming with c
 * Strings
 * Variables
 * Loops
