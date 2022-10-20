@@ -26,27 +26,27 @@ unsigned int _strlen(char *str)
  */
 list_t *add_node(list_t **head, const char *str)
 {
-	//Initialize variable new to type node
+	/* Initialize variable new to type node */
 	list_t *new;
 
-	//Confirm that data field of node is not empty or null
+	/* Confirm that data field of node is not empty or null*/
 	if (str == NULL)
 		return (NULL);
-	//Allocate enough memory for new node using datatype definition
+	/* Allocate enough memory for new node using datatype definition*/
 	new = malloc(sizeof(list_t));
-	// Confirm that memory is allocated
+	/*Confirm that memory is allocated*/
 	if (new == NULL)
 		return (NULL);
-	// Initialize dada field of new node
+	/* Initialize dada field of new node*/
 	new->str = strdup(str);
 	if (new->str == NULL)
 	{
 		free(new);
 		return (NULL);
 	}
-	//Initialize the length of the string in node using _strlen function
+	/* Initialize the length of the string in node using _strlen function*/
 	new->len = _strlen(new->str);
-	// Move new node to start of list
+	/* Move new node to start of list*/
 	new->next = *head;
 	*head = new;
 	return (new);
