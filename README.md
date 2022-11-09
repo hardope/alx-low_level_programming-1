@@ -16,5 +16,6 @@
 * Preprocessing
 * Compilation process
 * Memory Allocation
+* Data Structure And Algorithims
 * File I/O
 * System call and functions
